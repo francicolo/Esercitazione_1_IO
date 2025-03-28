@@ -4,12 +4,10 @@
 
 using namespace std;
 
-
 double map(double x){
     double y = (3.0/4.0)*x - 7.0/4.0; //mappa da [1,5] a [-1,2]
     return y;
 }
-
 
 int main(){
     ofstream ofs("result.txt"); //creo il file di output
@@ -37,7 +35,6 @@ int main(){
         mean = sum/i;
         ofs << i << " " << mean << endl;
     }
-
-
+    
     return 0;
 }
